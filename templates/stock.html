@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Prediction using Time Series Analysis</title>
+<style>
+body {background-color:LightGray;}
+h1   {color:SlateBlue;font-family: verdana;}
+h2    {color: Tomato;font-family: courier;font-size: 30px;}
+p     {color:Black;font-family: "Times New Roman", Times, serif;font-size: 20px;}
+</style>
+</head>
+<body style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <h1>Stock Prediction</h1>
+    <br>
+<p>The stock market is a marketplace that allows for the seamless exchange of corporate stock purchases and sales. Every Stock Exchange has its own value for the Stock Index. The index is the average value derived by adding up the prices of various equities. This aids in the representation of the entire stock market as well as the forecasting of market movement over time. The stock market can have a significant impact on individuals and the economy as a whole. As a result, effectively predicting stock trends can reduce the risk of loss while increasing profit.</p>
+    <form action="/predict" method="post">
+        <h2>Enter last 3 days stock value </h2>
+        <h2>Enter 1st day stock value</h2>
+        <input type="text" name="stk1">
+        <br><br>
+        <h2>Enter 2nd day stock value</h2>
+        <input type="text" name="stk2">
+        <br><br>
+        <h2>Enter 3rd day stock value</h2>
+        <input type="text" name="stk3">
+        <br><br>  
+        <input type="submit" value="predict">
+    </form>
+    <br>
+
+    <h1>Prediction : {{result}}</h1>
+</body>
+</body>
+</html>
